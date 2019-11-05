@@ -6,7 +6,9 @@ class Student
 
   def initialize(student_hash)
     student_hash.each do |k, v|
-      if k ==
+      if k == name
+        @name=v
+      elsif k==
   end
 
   def self.create_from_collection(students_array)
