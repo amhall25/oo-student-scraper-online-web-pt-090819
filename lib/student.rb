@@ -8,7 +8,9 @@ class Student
     student_hash.each do |k, v|
       if k == name
         @name=v
-      elsif k==
+      elsif k== location
+        @location = v
+      elsif k == 
   end
 
   def self.create_from_collection(students_array)
