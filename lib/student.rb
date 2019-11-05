@@ -13,6 +13,7 @@ class Student
       elsif k == profile_url
         @profile_url = v
       end
+    end
   end
 
   def self.create_from_collection(students_array)
