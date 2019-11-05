@@ -6,15 +6,8 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    student_hash.each do |k, v|
-      if k == :name
-        @name=v
-      elsif k== :location
-        @location = v
-      elsif k == :profile_url
-        @profile_url = v
-      end
-    end
+    student_hash.each {|k,v| self.send(("#{k}="),v)}
+    
     @@all << self
   end
 
