@@ -10,7 +10,9 @@ class Student
         @name=v
       elsif k== location
         @location = v
-      elsif k == 
+      elsif k == profile_url
+        @profile_url = v
+      end
   end
 
   def self.create_from_collection(students_array)
