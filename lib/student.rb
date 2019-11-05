@@ -19,12 +19,9 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |k, v|
-      if k == :name
-        @name=v
-      elsif k== :location
-        @location = v
-      end
+    students_array.each do |student|
+      Student.new(student)
+      
     end
     
   end
