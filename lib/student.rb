@@ -19,7 +19,14 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    binding.pry
+    students_array.each do |k, v|
+      if k == :name
+        @name=v
+      elsif k== :location
+        @location = v
+      end
+    end
+    
   end
 
   def add_student_attributes(attributes_hash)
